@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup and Login Form</title>
+  </head>
+  <body>
+    <h2>Signup / Login Form</h2>
+
+    <!-- Signup Form -->
+    <div id="signupForm">
+      <h3>Signup</h3>
+      <input
+        type="text"
+        id="signupUsername"
+        placeholder="Choose username"
+      /><br /><br />
+      <input
+        type="password"
+        id="signupPassword"
+        placeholder="Choose password"
+      /><br /><br />
+      <button onclick="signup()">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" style="display: none">
+      <h3>Login</h3>
+      <input
+        type="text"
+        id="loginUsername"
+        placeholder="Enter username"
+      /><br /><br />
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Enter password"
+      /><br /><br />
+      <button onclick="login()">Log In</button>
+    </div>
+
+    <!-- Welcome Message -->
+    <div id="welcomeMessage" style="display: none">
+      <h3>Welcome, <span id="displayUsername"></span>!</h3>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

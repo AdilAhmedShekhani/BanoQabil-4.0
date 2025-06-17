@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Signup & Login with LocalStorage</title>
+  </head>
+  <body>
+    <h2>Sign Up</h2>
+    <input type="text" id="signupName" placeholder="Name" /><br />
+    <input type="email" id="signupEmail" placeholder="Email" /><br />
+    <input type="password" id="signupPassword" placeholder="Password" /><br />
+    <button onclick="signup()">Sign Up</button>
+
+    <hr />
+
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email" /><br />
+    <input type="password" id="loginPassword" placeholder="Password" /><br />
+    <button onclick="login()">Login</button>
+
+    <hr />
+
+    <button onclick="logout()">Logout (Remove User)</button>
+    <button onclick="clearAll()">Clear All Data</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
